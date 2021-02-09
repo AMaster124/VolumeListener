@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		107EF6874DC3A74BC96FDDCF /* Pods_VolumeListener_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 868A7AE14BA74D9C20641870 /* Pods_VolumeListener_Example.framework */; };
+		14DACCCC965BB8F0590D555E /* Pods_VolumeListener_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C9C1E00269E49E44B589EE /* Pods_VolumeListener_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		B7490C898A47A1209DFBCF6C /* Pods_VolumeListener_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEC487FEAF046A721B908AD /* Pods_VolumeListener_Tests.framework */; };
+		9175BBF0DDF5A8F8AEECF2A1 /* Pods_VolumeListener_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C918AD053996529B97E62E71 /* Pods_VolumeListener_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,11 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1C6AB33D138E031B854D85AA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		2300491CF48247375F761BD3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		370CC6F6773C40C2824BA933 /* Pods-VolumeListener_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolumeListener_Example.release.xcconfig"; path = "Target Support Files/Pods-VolumeListener_Example/Pods-VolumeListener_Example.release.xcconfig"; sourceTree = "<group>"; };
-		380B556C5936D547DB01178F /* VolumeListener.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = VolumeListener.podspec; path = ../VolumeListener.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		48931D35D0409B4EC2738B03 /* Pods-VolumeListener_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolumeListener_Tests.release.xcconfig"; path = "Target Support Files/Pods-VolumeListener_Tests/Pods-VolumeListener_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		030D3D495F6E058A5AE8E4AC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5A00B7D1C67A21B12C1658B1 /* VolumeListener.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = VolumeListener.podspec; path = ../VolumeListener.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* VolumeListener_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VolumeListener_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,10 +40,13 @@
 		607FACE51AFB9204008FA782 /* VolumeListener_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VolumeListener_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6DEC487FEAF046A721B908AD /* Pods_VolumeListener_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VolumeListener_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E82241928645A8DC7DCB5A2 /* Pods-VolumeListener_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolumeListener_Tests.debug.xcconfig"; path = "Target Support Files/Pods-VolumeListener_Tests/Pods-VolumeListener_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		868A7AE14BA74D9C20641870 /* Pods_VolumeListener_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VolumeListener_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DECCD7788E046354E4EA8680 /* Pods-VolumeListener_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolumeListener_Example.debug.xcconfig"; path = "Target Support Files/Pods-VolumeListener_Example/Pods-VolumeListener_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		979777111924F19CEA4566F7 /* Pods-VolumeListener_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolumeListener_Tests.debug.xcconfig"; path = "Target Support Files/Pods-VolumeListener_Tests/Pods-VolumeListener_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		9FFC578D76815385BC4E222E /* Pods-VolumeListener_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolumeListener_Example.debug.xcconfig"; path = "Target Support Files/Pods-VolumeListener_Example/Pods-VolumeListener_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B2355BFE4E057C8999AD5F52 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B97D3B7C6EA19B39A16DF5DF /* Pods-VolumeListener_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolumeListener_Example.release.xcconfig"; path = "Target Support Files/Pods-VolumeListener_Example/Pods-VolumeListener_Example.release.xcconfig"; sourceTree = "<group>"; };
+		C918AD053996529B97E62E71 /* Pods_VolumeListener_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VolumeListener_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7C9C1E00269E49E44B589EE /* Pods_VolumeListener_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VolumeListener_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2BC512C3B4B33E5C35DB556 /* Pods-VolumeListener_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolumeListener_Tests.release.xcconfig"; path = "Target Support Files/Pods-VolumeListener_Tests/Pods-VolumeListener_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				107EF6874DC3A74BC96FDDCF /* Pods_VolumeListener_Example.framework in Frameworks */,
+				14DACCCC965BB8F0590D555E /* Pods_VolumeListener_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,13 +62,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7490C898A47A1209DFBCF6C /* Pods_VolumeListener_Tests.framework in Frameworks */,
+				9175BBF0DDF5A8F8AEECF2A1 /* Pods_VolumeListener_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32748A0D77E805F0F41CFEDD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9FFC578D76815385BC4E222E /* Pods-VolumeListener_Example.debug.xcconfig */,
+				B97D3B7C6EA19B39A16DF5DF /* Pods-VolumeListener_Example.release.xcconfig */,
+				979777111924F19CEA4566F7 /* Pods-VolumeListener_Tests.debug.xcconfig */,
+				E2BC512C3B4B33E5C35DB556 /* Pods-VolumeListener_Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -76,8 +87,8 @@
 				607FACD21AFB9204008FA782 /* Example for VolumeListener */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				DD69EEE40CAFC034FEF81297 /* Pods */,
-				8A2BE9F21FB7DF121D3959BA /* Frameworks */,
+				32748A0D77E805F0F41CFEDD /* Pods */,
+				A633E7AF7B66E546DDB9DA7F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,31 +143,20 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				380B556C5936D547DB01178F /* VolumeListener.podspec */,
-				1C6AB33D138E031B854D85AA /* README.md */,
-				2300491CF48247375F761BD3 /* LICENSE */,
+				5A00B7D1C67A21B12C1658B1 /* VolumeListener.podspec */,
+				B2355BFE4E057C8999AD5F52 /* README.md */,
+				030D3D495F6E058A5AE8E4AC /* LICENSE */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		8A2BE9F21FB7DF121D3959BA /* Frameworks */ = {
+		A633E7AF7B66E546DDB9DA7F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				868A7AE14BA74D9C20641870 /* Pods_VolumeListener_Example.framework */,
-				6DEC487FEAF046A721B908AD /* Pods_VolumeListener_Tests.framework */,
+				D7C9C1E00269E49E44B589EE /* Pods_VolumeListener_Example.framework */,
+				C918AD053996529B97E62E71 /* Pods_VolumeListener_Tests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DD69EEE40CAFC034FEF81297 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DECCD7788E046354E4EA8680 /* Pods-VolumeListener_Example.debug.xcconfig */,
-				370CC6F6773C40C2824BA933 /* Pods-VolumeListener_Example.release.xcconfig */,
-				7E82241928645A8DC7DCB5A2 /* Pods-VolumeListener_Tests.debug.xcconfig */,
-				48931D35D0409B4EC2738B03 /* Pods-VolumeListener_Tests.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,11 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "VolumeListener_Example" */;
 			buildPhases = (
-				6BADEE60532A23982E83A665 /* [CP] Check Pods Manifest.lock */,
+				DF9AE43A81FAE52B62B19272 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				5FE44BE91F861682CF383B27 /* [CP] Embed Pods Frameworks */,
+				38569EC9C3B0300F1102E7C8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,7 +185,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "VolumeListener_Tests" */;
 			buildPhases = (
-				A7DC673227D3CA7A73002248 /* [CP] Check Pods Manifest.lock */,
+				A096013E155E93C9036B22B0 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
@@ -212,10 +212,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = TQ8Z597CH2;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = TQ8Z597CH2;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -262,7 +264,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5FE44BE91F861682CF383B27 /* [CP] Embed Pods Frameworks */ = {
+		38569EC9C3B0300F1102E7C8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -280,29 +282,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VolumeListener_Example/Pods-VolumeListener_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6BADEE60532A23982E83A665 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-VolumeListener_Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A7DC673227D3CA7A73002248 /* [CP] Check Pods Manifest.lock */ = {
+		A096013E155E93C9036B22B0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -318,6 +298,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-VolumeListener_Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF9AE43A81FAE52B62B19272 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VolumeListener_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -475,13 +477,15 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DECCD7788E046354E4EA8680 /* Pods-VolumeListener_Example.debug.xcconfig */;
+			baseConfigurationReference = 9FFC578D76815385BC4E222E /* Pods-VolumeListener_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TQ8Z597CH2;
 				INFOPLIST_FILE = VolumeListener/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = ios.barunsoft.volumelistener;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -490,13 +494,15 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 370CC6F6773C40C2824BA933 /* Pods-VolumeListener_Example.release.xcconfig */;
+			baseConfigurationReference = B97D3B7C6EA19B39A16DF5DF /* Pods-VolumeListener_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TQ8Z597CH2;
 				INFOPLIST_FILE = VolumeListener/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = ios.barunsoft.volumelistener;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -505,8 +511,9 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E82241928645A8DC7DCB5A2 /* Pods-VolumeListener_Tests.debug.xcconfig */;
+			baseConfigurationReference = 979777111924F19CEA4566F7 /* Pods-VolumeListener_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = TQ8Z597CH2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -527,8 +534,9 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48931D35D0409B4EC2738B03 /* Pods-VolumeListener_Tests.release.xcconfig */;
+			baseConfigurationReference = E2BC512C3B4B33E5C35DB556 /* Pods-VolumeListener_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = TQ8Z597CH2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

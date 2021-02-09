@@ -17,7 +17,45 @@ VolumeListener is available through [CocoaPods](https://cocoapods.org). To insta
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'VolumeListener'
+pod 'VolumeListner', :git => 'https://github.com/AMaster124/VolumeListner'
+```
+
+## Permission
+Add to your Info.plist apropriate *UsageDescription keys with a string value explaining to the user how the app uses location data. Please see official documentation
+
+```xml
+<key>NSLocationWhenInUseUsageDescription</key>
+<string>Some description</string>
+<key>NSLocationAlwaysUsageDescription</key>
+<string>Some description</string>
+<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+<string>Some description</string>
+```
+
+## Usage
+
+> [Example/VolumeListener/ViewController.swift](https://github.com/AMaster124/VolumeListner/blob/main/Example/VolumeListener/ViewController.swift)
+
+Start volume listening
+
+```swift
+import VolumeListener
+
+...
+
+VolumeListener.sharedInstance().startListener(triggerCnt: 3, delegate: self)
+```
+
+Set listener status
+
+```swift
+VolumeListener.sharedInstance().setWait(wait: true)
+```
+
+Get listener status
+
+```swift
+VolumeListener.sharedInstance().isWait
 ```
 
 ## Author
