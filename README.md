@@ -36,7 +36,7 @@ Add to your Info.plist apropriate *UsageDescription keys with a string value exp
 To get to the background modes capability list you:
 
 1. Select the project from the Project navigator.
-2 . Click the app target.
+2. Click the app target.
 3. Select the Capabilities tab.
 4. Turn the Background Modes switch on.
 5. Check the options: Location updates, Background fetch, Background processing 
