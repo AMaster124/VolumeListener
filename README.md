@@ -17,7 +17,7 @@ VolumeListener is available through [CocoaPods](https://cocoapods.org). To insta
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'VolumeListner', :git => 'https://github.com/AMaster124/VolumeListner'
+pod 'VolumeListener', :git => 'https://github.com/AMaster124/VolumeListener.git'
 ```
 
 ## Permission
