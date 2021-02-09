@@ -34,7 +34,7 @@ Add to your Info.plist apropriate *UsageDescription keys with a string value exp
 
 ## Usage
 
-> [Example/VolumeListener/ViewController.swift](https://github.com/AMaster124/VolumeListner/blob/main/Example/VolumeListener/ViewController.swift)
+> [Example/VolumeListener/ViewController.swift](https://github.com/AMaster124/VolumeListener/blob/main/Example/VolumeListener/ViewController.swift)
 
 Start volume listening
 
