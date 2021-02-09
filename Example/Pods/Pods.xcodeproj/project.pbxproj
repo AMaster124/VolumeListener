@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BB488525582815AAF8949C23919794F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		11D89A120B629A60E66AC9FB63E85E3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		1B345DB01E6F98E6CF5A0E2B42458BD2 /* VolumeListener-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D99B96674E5D579A17304573C990FBE6 /* VolumeListener-dummy.m */; };
+		2954DA8AEF7CBB542242085081A5D180 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		2CDA241F936D3CED15421452606436A4 /* Pods-VolumeListener_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C26CDD612259F24E58F2163A5F1CC7F5 /* Pods-VolumeListener_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B89C1CD2973EC16722F616E18D5253F /* VolumeListener-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C820CDAA6D182908AF73453A0B3F5AEE /* VolumeListener-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83DE9C7219ADDBCC3E2683FEE2CB73C5 /* Pods-VolumeListener_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6A42EDB0635E28D8FA8C0BB6C643F3 /* Pods-VolumeListener_Example-dummy.m */; };
+		D8FD1B5A6012A7638AA8F5C8D7B4CC0E /* Pods-VolumeListener_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9781F11643F4516988AC09DDF0DD512F /* Pods-VolumeListener_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E25B53C6F8067DEEE6049F589619FF90 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A5D9B5A655C3677A70B0B221EE1EE7 /* ReplaceMe.swift */; };
+		F2E2A159FD1836814FDF2B08372F2EE8 /* Pods-VolumeListener_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FD2879E9DD57A4335E323D4D7630BB /* Pods-VolumeListener_Tests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9C572C748966BA67927F415451531A19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A2147A5F881B983B8090B57A3A63333;
+			remoteInfo = VolumeListener;
+		};
+		CDD2FBF03C263FE0C071B0BCD940EA09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 676DA176D83DF49ECACD50CBD574171C;
+			remoteInfo = "Pods-VolumeListener_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1139B808EF1B521BA15C0477FB12A56C /* Pods_VolumeListener_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VolumeListener_Tests.framework; path = "Pods-VolumeListener_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		137D692BD06B0EEC34844E536E99616B /* VolumeListener.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = VolumeListener.modulemap; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3A6F013A8EF50EB39C244F1570F911A8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		3D450E091377BD9CFAB1F79264737E65 /* Pods-VolumeListener_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VolumeListener_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3DFA751D26BE4AA506D3BA8038EC21A4 /* VolumeListener.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = VolumeListener.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		47FD2879E9DD57A4335E323D4D7630BB /* Pods-VolumeListener_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VolumeListener_Tests-dummy.m"; sourceTree = "<group>"; };
+		61269ABC7C12AE9E90AFF9E81FCB5421 /* Pods-VolumeListener_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VolumeListener_Tests-Info.plist"; sourceTree = "<group>"; };
+		6C0FC8219B646BBD13C4939C73E37930 /* VolumeListener.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VolumeListener.release.xcconfig; sourceTree = "<group>"; };
+		7D266C6CC51BFBBE1627AF7BDC483696 /* Pods-VolumeListener_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VolumeListener_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		7D4777ED66A419494CDD5173F590B3CE /* Pods-VolumeListener_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VolumeListener_Example.release.xcconfig"; sourceTree = "<group>"; };
+		8C69CC3BEFFDCD5E336202A04543BBD9 /* Pods-VolumeListener_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VolumeListener_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		9781F11643F4516988AC09DDF0DD512F /* Pods-VolumeListener_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VolumeListener_Tests-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A75C4EFC573056E305E89B30ACD95BE1 /* Pods-VolumeListener_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VolumeListener_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		ADBDC7DEC5AFA1ADFCF759763C570070 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		B2B7D303074388CAFAE3151290B6BD70 /* Pods_VolumeListener_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VolumeListener_Example.framework; path = "Pods-VolumeListener_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D9D5EC0EB985574877FE9797267331 /* Pods-VolumeListener_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VolumeListener_Example-Info.plist"; sourceTree = "<group>"; };
+		C26CDD612259F24E58F2163A5F1CC7F5 /* Pods-VolumeListener_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VolumeListener_Example-umbrella.h"; sourceTree = "<group>"; };
+		C4FE7A1949E5BCEE36D48494657D16CB /* VolumeListener-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VolumeListener-prefix.pch"; sourceTree = "<group>"; };
+		C73C9665C16E92B38D6BC44D563CF81C /* VolumeListener-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "VolumeListener-Info.plist"; sourceTree = "<group>"; };
+		C820CDAA6D182908AF73453A0B3F5AEE /* VolumeListener-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VolumeListener-umbrella.h"; sourceTree = "<group>"; };
+		CD6A42EDB0635E28D8FA8C0BB6C643F3 /* Pods-VolumeListener_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VolumeListener_Example-dummy.m"; sourceTree = "<group>"; };
+		D05C8250BEB35930E135577A335995EE /* VolumeListener.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VolumeListener.debug.xcconfig; sourceTree = "<group>"; };
+		D2E45AB871C2D38FA5E805D5AB12BD13 /* Pods-VolumeListener_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VolumeListener_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D656FB74BE2C881928D3C83758BDCD41 /* Pods-VolumeListener_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VolumeListener_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D6A5D9B5A655C3677A70B0B221EE1EE7 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = VolumeListener/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		D99B96674E5D579A17304573C990FBE6 /* VolumeListener-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VolumeListener-dummy.m"; sourceTree = "<group>"; };
+		DCA0520ED030AC5B6E4CBA21562EA2B6 /* Pods-VolumeListener_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VolumeListener_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E961C3861C42F28C16653AEA66411062 /* Pods-VolumeListener_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VolumeListener_Tests.modulemap"; sourceTree = "<group>"; };
+		EF450E9EEEE54BBE287177533F58E622 /* Pods-VolumeListener_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VolumeListener_Example-frameworks.sh"; sourceTree = "<group>"; };
+		F4B017E4072F3F8D5A2767AFB2875F29 /* Pods-VolumeListener_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VolumeListener_Example.modulemap"; sourceTree = "<group>"; };
+		F91977CED55679A1B8D7136F045D0A98 /* VolumeListener.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VolumeListener.framework; path = VolumeListener.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04B9BDB94721C1F52F60A03948753517 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2954DA8AEF7CBB542242085081A5D180 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50774FB15104BD41C7F260D56023C3AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11D89A120B629A60E66AC9FB63E85E3D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE6701C5D21FC0CEE2C0EDBB6E0BF67A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BB488525582815AAF8949C23919794F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		264550D1B466775D6C6E490237933A6F /* VolumeListener */ = {
+			isa = PBXGroup;
+			children = (
+				D6A5D9B5A655C3677A70B0B221EE1EE7 /* ReplaceMe.swift */,
+				3E5CB69B835C12724B826F3119539D70 /* Pod */,
+				7DC7EF825D83AD70967CF1DB968AD633 /* Support Files */,
+			);
+			name = VolumeListener;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		34650572D051AB4E092325681A7D4AA8 /* Pods-VolumeListener_Example */ = {
+			isa = PBXGroup;
+			children = (
+				F4B017E4072F3F8D5A2767AFB2875F29 /* Pods-VolumeListener_Example.modulemap */,
+				3D450E091377BD9CFAB1F79264737E65 /* Pods-VolumeListener_Example-acknowledgements.markdown */,
+				7D266C6CC51BFBBE1627AF7BDC483696 /* Pods-VolumeListener_Example-acknowledgements.plist */,
+				CD6A42EDB0635E28D8FA8C0BB6C643F3 /* Pods-VolumeListener_Example-dummy.m */,
+				EF450E9EEEE54BBE287177533F58E622 /* Pods-VolumeListener_Example-frameworks.sh */,
+				B6D9D5EC0EB985574877FE9797267331 /* Pods-VolumeListener_Example-Info.plist */,
+				C26CDD612259F24E58F2163A5F1CC7F5 /* Pods-VolumeListener_Example-umbrella.h */,
+				D656FB74BE2C881928D3C83758BDCD41 /* Pods-VolumeListener_Example.debug.xcconfig */,
+				7D4777ED66A419494CDD5173F590B3CE /* Pods-VolumeListener_Example.release.xcconfig */,
+			);
+			name = "Pods-VolumeListener_Example";
+			path = "Target Support Files/Pods-VolumeListener_Example";
+			sourceTree = "<group>";
+		};
+		3E5CB69B835C12724B826F3119539D70 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				ADBDC7DEC5AFA1ADFCF759763C570070 /* LICENSE */,
+				3A6F013A8EF50EB39C244F1570F911A8 /* README.md */,
+				3DFA751D26BE4AA506D3BA8038EC21A4 /* VolumeListener.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		4AE4F5D67AA0BCD31FB4729EFF334EF6 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				264550D1B466775D6C6E490237933A6F /* VolumeListener */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		5D8B3B2A574DEF7F19C9FBC05DF10DB4 /* Pods-VolumeListener_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E961C3861C42F28C16653AEA66411062 /* Pods-VolumeListener_Tests.modulemap */,
+				D2E45AB871C2D38FA5E805D5AB12BD13 /* Pods-VolumeListener_Tests-acknowledgements.markdown */,
+				A75C4EFC573056E305E89B30ACD95BE1 /* Pods-VolumeListener_Tests-acknowledgements.plist */,
+				47FD2879E9DD57A4335E323D4D7630BB /* Pods-VolumeListener_Tests-dummy.m */,
+				61269ABC7C12AE9E90AFF9E81FCB5421 /* Pods-VolumeListener_Tests-Info.plist */,
+				9781F11643F4516988AC09DDF0DD512F /* Pods-VolumeListener_Tests-umbrella.h */,
+				DCA0520ED030AC5B6E4CBA21562EA2B6 /* Pods-VolumeListener_Tests.debug.xcconfig */,
+				8C69CC3BEFFDCD5E336202A04543BBD9 /* Pods-VolumeListener_Tests.release.xcconfig */,
+			);
+			name = "Pods-VolumeListener_Tests";
+			path = "Target Support Files/Pods-VolumeListener_Tests";
+			sourceTree = "<group>";
+		};
+		6A3A9157540D6E7D8B4603DEC5C2077D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				34650572D051AB4E092325681A7D4AA8 /* Pods-VolumeListener_Example */,
+				5D8B3B2A574DEF7F19C9FBC05DF10DB4 /* Pods-VolumeListener_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DC7EF825D83AD70967CF1DB968AD633 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				137D692BD06B0EEC34844E536E99616B /* VolumeListener.modulemap */,
+				D99B96674E5D579A17304573C990FBE6 /* VolumeListener-dummy.m */,
+				C73C9665C16E92B38D6BC44D563CF81C /* VolumeListener-Info.plist */,
+				C4FE7A1949E5BCEE36D48494657D16CB /* VolumeListener-prefix.pch */,
+				C820CDAA6D182908AF73453A0B3F5AEE /* VolumeListener-umbrella.h */,
+				D05C8250BEB35930E135577A335995EE /* VolumeListener.debug.xcconfig */,
+				6C0FC8219B646BBD13C4939C73E37930 /* VolumeListener.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/VolumeListener";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				4AE4F5D67AA0BCD31FB4729EFF334EF6 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				E78633B9A54E10CD0D6D3FC14C15A976 /* Products */,
+				6A3A9157540D6E7D8B4603DEC5C2077D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E78633B9A54E10CD0D6D3FC14C15A976 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2B7D303074388CAFAE3151290B6BD70 /* Pods_VolumeListener_Example.framework */,
+				1139B808EF1B521BA15C0477FB12A56C /* Pods_VolumeListener_Tests.framework */,
+				F91977CED55679A1B8D7136F045D0A98 /* VolumeListener.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		265A8385EA0FF937EB8AB8077C578EDB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8FD1B5A6012A7638AA8F5C8D7B4CC0E /* Pods-VolumeListener_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C97A6AAE99978295924527946AA4BC34 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B89C1CD2973EC16722F616E18D5253F /* VolumeListener-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D290C7282A14FFF287320463838E763B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CDA241F936D3CED15421452606436A4 /* Pods-VolumeListener_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		676DA176D83DF49ECACD50CBD574171C /* Pods-VolumeListener_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A34919D9A3FC57389EFFE123A3185B43 /* Build configuration list for PBXNativeTarget "Pods-VolumeListener_Example" */;
+			buildPhases = (
+				D290C7282A14FFF287320463838E763B /* Headers */,
+				D8E9E1DEDB3B385013FC996F7A912806 /* Sources */,
+				50774FB15104BD41C7F260D56023C3AD /* Frameworks */,
+				62F76A98A65A99D0FF8EAE2DAEF73EE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96DE2FBDE34581A670C5F828D0F5D7A4 /* PBXTargetDependency */,
+			);
+			name = "Pods-VolumeListener_Example";
+			productName = "Pods-VolumeListener_Example";
+			productReference = B2B7D303074388CAFAE3151290B6BD70 /* Pods_VolumeListener_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7A2147A5F881B983B8090B57A3A63333 /* VolumeListener */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D80866B442DFF1C72FB34D6F642060B /* Build configuration list for PBXNativeTarget "VolumeListener" */;
+			buildPhases = (
+				C97A6AAE99978295924527946AA4BC34 /* Headers */,
+				39CE334C85122972C1407D21D23CFB23 /* Sources */,
+				04B9BDB94721C1F52F60A03948753517 /* Frameworks */,
+				80E773D82ED40B7115412644DFAB8C5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VolumeListener;
+			productName = VolumeListener;
+			productReference = F91977CED55679A1B8D7136F045D0A98 /* VolumeListener.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		84B126C2A48BF81FD70338DD03270919 /* Pods-VolumeListener_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 460C74A831636A44CB863D96FD864820 /* Build configuration list for PBXNativeTarget "Pods-VolumeListener_Tests" */;
+			buildPhases = (
+				265A8385EA0FF937EB8AB8077C578EDB /* Headers */,
+				3F1A4FAAEC582DC6FAE93F5B5AC6C556 /* Sources */,
+				CE6701C5D21FC0CEE2C0EDBB6E0BF67A /* Frameworks */,
+				0D747EA3E99C2D435EDB6AD476E20CBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A03749B3FDC88FA149838657DBA5C0AA /* PBXTargetDependency */,
+			);
+			name = "Pods-VolumeListener_Tests";
+			productName = "Pods-VolumeListener_Tests";
+			productReference = 1139B808EF1B521BA15C0477FB12A56C /* Pods_VolumeListener_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = E78633B9A54E10CD0D6D3FC14C15A976 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				676DA176D83DF49ECACD50CBD574171C /* Pods-VolumeListener_Example */,
+				84B126C2A48BF81FD70338DD03270919 /* Pods-VolumeListener_Tests */,
+				7A2147A5F881B983B8090B57A3A63333 /* VolumeListener */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D747EA3E99C2D435EDB6AD476E20CBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62F76A98A65A99D0FF8EAE2DAEF73EE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80E773D82ED40B7115412644DFAB8C5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39CE334C85122972C1407D21D23CFB23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E25B53C6F8067DEEE6049F589619FF90 /* ReplaceMe.swift in Sources */,
+				1B345DB01E6F98E6CF5A0E2B42458BD2 /* VolumeListener-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F1A4FAAEC582DC6FAE93F5B5AC6C556 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2E2A159FD1836814FDF2B08372F2EE8 /* Pods-VolumeListener_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8E9E1DEDB3B385013FC996F7A912806 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83DE9C7219ADDBCC3E2683FEE2CB73C5 /* Pods-VolumeListener_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		96DE2FBDE34581A670C5F828D0F5D7A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VolumeListener;
+			target = 7A2147A5F881B983B8090B57A3A63333 /* VolumeListener */;
+			targetProxy = 9C572C748966BA67927F415451531A19 /* PBXContainerItemProxy */;
+		};
+		A03749B3FDC88FA149838657DBA5C0AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-VolumeListener_Example";
+			target = 676DA176D83DF49ECACD50CBD574171C /* Pods-VolumeListener_Example */;
+			targetProxy = CDD2FBF03C263FE0C071B0BCD940EA09 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0EFA1D319B2D5902046293FF415AEDCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D4777ED66A419494CDD5173F590B3CE /* Pods-VolumeListener_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VolumeListener_Example/Pods-VolumeListener_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VolumeListener_Example/Pods-VolumeListener_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1595D83120A2C26F7CDCD46A55D49426 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C69CC3BEFFDCD5E336202A04543BBD9 /* Pods-VolumeListener_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VolumeListener_Tests/Pods-VolumeListener_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VolumeListener_Tests/Pods-VolumeListener_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C63B50A82CB694B672FEA605D4B419D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C0FC8219B646BBD13C4939C73E37930 /* VolumeListener.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VolumeListener/VolumeListener-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VolumeListener/VolumeListener-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/VolumeListener/VolumeListener.modulemap";
+				PRODUCT_MODULE_NAME = VolumeListener;
+				PRODUCT_NAME = VolumeListener;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CBA64B05D781E00EBE340E3EABF8A0FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCA0520ED030AC5B6E4CBA21562EA2B6 /* Pods-VolumeListener_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VolumeListener_Tests/Pods-VolumeListener_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VolumeListener_Tests/Pods-VolumeListener_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EED1DD021C6A7FB5BC34F222FA829D29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D05C8250BEB35930E135577A335995EE /* VolumeListener.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VolumeListener/VolumeListener-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VolumeListener/VolumeListener-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/VolumeListener/VolumeListener.modulemap";
+				PRODUCT_MODULE_NAME = VolumeListener;
+				PRODUCT_NAME = VolumeListener;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FEDFA003F08F582BF43AD80B94E6D608 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D656FB74BE2C881928D3C83758BDCD41 /* Pods-VolumeListener_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VolumeListener_Example/Pods-VolumeListener_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VolumeListener_Example/Pods-VolumeListener_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D80866B442DFF1C72FB34D6F642060B /* Build configuration list for PBXNativeTarget "VolumeListener" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED1DD021C6A7FB5BC34F222FA829D29 /* Debug */,
+				C63B50A82CB694B672FEA605D4B419D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		460C74A831636A44CB863D96FD864820 /* Build configuration list for PBXNativeTarget "Pods-VolumeListener_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBA64B05D781E00EBE340E3EABF8A0FD /* Debug */,
+				1595D83120A2C26F7CDCD46A55D49426 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A34919D9A3FC57389EFFE123A3185B43 /* Build configuration list for PBXNativeTarget "Pods-VolumeListener_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEDFA003F08F582BF43AD80B94E6D608 /* Debug */,
+				0EFA1D319B2D5902046293FF415AEDCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

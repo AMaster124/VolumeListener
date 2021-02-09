@@ -1,0 +1,22 @@
+{
+  "name": "VolumeListener",
+  "version": "0.1.0",
+  "summary": "A short description of VolumeListener.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/AMaster124/VolumeListener",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "AMaster124": "bestfriend1990124@hotmail.com"
+  },
+  "source": {
+    "git": "https://github.com/AMaster124/VolumeListener.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "VolumeListener/Classes/**/*"
+}

@@ -1,0 +1,6 @@
+framework module VolumeListener {
+  umbrella header "VolumeListener-umbrella.h"
+
+  export *
+  module * { export * }
+}

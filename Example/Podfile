@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'VolumeListener_Example' do
+  pod 'VolumeListener', :path => '../'
+
+  target 'VolumeListener_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

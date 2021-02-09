@@ -1,0 +1,16 @@
+PODS:
+  - VolumeListener (0.1.0)
+
+DEPENDENCIES:
+  - VolumeListener (from `../`)
+
+EXTERNAL SOURCES:
+  VolumeListener:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  VolumeListener: c5d651d2526ca4b287e98e71e3426cc767d4d20b
+
+PODFILE CHECKSUM: 1aeb22ff173f337d3d1031cce0905fd712733a4d
+
+COCOAPODS: 1.9.3
