@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.author           = { 'AMaster124' => 'bestfriend1990124@hotmail.com' }
   s.source           = { :git => 'https://github.com/AMaster124/VolumeListener.git', :tag => s.version.to_s }
   s.swift_version = '5.0'
-  s.ios.deployment_target = '9.3'
+  s.ios.deployment_target = '10.0'
   s.source_files     = "VolumeListener/Classes/**/*"
  
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'

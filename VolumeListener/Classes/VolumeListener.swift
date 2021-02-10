@@ -53,7 +53,7 @@ public class VolumeListener: NSObject, CLLocationManagerDelegate {
 //        } catch {
 //            print("cannot activate session")
 //        }
-//        
+//
         UIApplication.shared.beginReceivingRemoteControlEvents()
         NotificationCenter.default.addObserver(self, selector: #selector(self.volumeDidChange(notification:)), name: NSNotification.Name(rawValue: "AVSystemController_SystemVolumeDidChangeNotification"), object: nil)
     }
@@ -70,10 +70,10 @@ public class VolumeListener: NSObject, CLLocationManagerDelegate {
                 self.audioPlayer = try AVAudioPlayer(contentsOf: url)
                 self.audioPlayer?.numberOfLoops = 1
 
-                try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, with: .mixWithOthers)
-                NSLog("Playback OK")
-                try AVAudioSession.sharedInstance().setActive(true)
-                NSLog("Session is Active")
+//                try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, mode: AVAudioSession.Mode.default, options: [.mixWithOthers, .allowAirPlay])
+//                NSLog("Playback OK")
+//                try AVAudioSession.sharedInstance().setActive(true)
+//                NSLog("Session is Active")
                 try AVAudioSession.sharedInstance().setActive(true)
                 print("Session is Active")
             } catch {
