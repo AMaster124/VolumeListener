@@ -21,6 +21,9 @@ public class VolumeListener: NSObject, CLLocationManagerDelegate {
     private var clickedCnt = 0
     private var spaceTime = 0.1
     private var checkSpaceTimer: Timer? = nil
+    
+    private var audioPlayer: AVAudioPlayer? = nil
+    
     let reachability = try! VLReachability()
 
     public static func sharedInstance() -> VolumeListener {
@@ -43,14 +46,45 @@ public class VolumeListener: NSObject, CLLocationManagerDelegate {
 //        self.locationManager.startUpdatingLocation()
         self.locationManager.delegate = self
         
-        do {
-            try audioSession.setActive(true)
-        } catch {
-            print("cannot activate session")
-        }
+        playMusic()
         
+//        do {
+//            try audioSession.setActive(true)
+//        } catch {
+//            print("cannot activate session")
+//        }
+//        
         UIApplication.shared.beginReceivingRemoteControlEvents()
         NotificationCenter.default.addObserver(self, selector: #selector(self.volumeDidChange(notification:)), name: NSNotification.Name(rawValue: "AVSystemController_SystemVolumeDidChangeNotification"), object: nil)
+    }
+    
+    private func playMusic(){
+        let path = Bundle.main.path(forResource: "nonesound.mp3", ofType: nil)
+        let url = URL(fileURLWithPath: path!)
+        do{
+            if(self.audioPlayer != nil && self.audioPlayer!.isPlaying){
+                self.audioPlayer?.stop()
+            }
+            
+            do {
+                self.audioPlayer = try AVAudioPlayer(contentsOf: url)
+                self.audioPlayer?.numberOfLoops = 1
+
+                try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, with: .mixWithOthers)
+                NSLog("Playback OK")
+                try AVAudioSession.sharedInstance().setActive(true)
+                NSLog("Session is Active")
+                try AVAudioSession.sharedInstance().setActive(true)
+                print("Session is Active")
+            } catch {
+                print(error)
+            }
+
+            self.audioPlayer?.play()
+            
+        } catch{
+            
+        }
     }
     
     func stopListenr() {

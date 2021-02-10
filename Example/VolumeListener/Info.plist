@@ -2,8 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>BGTaskSchedulerPermittedIdentifiers</key>
+	<array>
+		<string>com.barunsoft.volumelistener</string>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>볼륨테스트</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -19,9 +25,19 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>App requires to get your location in background</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>App requires to get your location in background</string>
+	<key>NSLocationUsageDescription</key>
+	<string>App requires to get your location in background</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>App requires to get your location in background</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Need microphone access for uploading videos</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>audio</string>
@@ -44,15 +60,5 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 	</array>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>App requires to get your location in background</string>
-	<key>NSLocationUsageDescription</key>
-	<string>App requires to get your location in background</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>App requires to get your location in background</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>App requires to get your location in background</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>Need microphone access for uploading videos</string>
 </dict>
 </plist>
