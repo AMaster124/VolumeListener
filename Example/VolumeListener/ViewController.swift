@@ -47,7 +47,11 @@ class ViewController: UIViewController {
         content.body = "구조요청이 되었습니다."
         content.categoryIdentifier = "alarm"
         content.userInfo = ["customData": "fizzbuzz"]
-        content.sound = .defaultCritical
+        if #available(iOS 12.0, *) {
+            content.sound = .defaultCritical
+        } else {
+            content.sound = .default
+        }
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
         
