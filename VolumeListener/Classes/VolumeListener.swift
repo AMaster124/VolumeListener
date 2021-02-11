@@ -59,8 +59,9 @@ public class VolumeListener: NSObject, CLLocationManagerDelegate {
     }
     
     private func playMusic(){
-        guard let path = Bundle.main.path(forResource: "nonesound.mp3", ofType: nil) else { return }
-        let url = URL(fileURLWithPath: path)
+//        guard let path = Bundle.main.path(forResource: "nonesound.mp3", ofType: nil) else { return }
+        guard let url = Bundle(for: VolumeListener.self).url(forResource: "phone_sound", withExtension: "mp3") else {return}
+//        let url = URL(fileURLWithPath: path)
 //        do{
             if(self.audioPlayer != nil && self.audioPlayer!.isPlaying){
                 self.audioPlayer?.stop()
@@ -79,7 +80,7 @@ public class VolumeListener: NSObject, CLLocationManagerDelegate {
             self.audioPlayer?.play()
             
 //        } catch{
-//            
+//
 //        }
     }
     
