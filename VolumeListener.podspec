@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'VolumeListener'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = 'Volume change listener.'
 #  s.description      = <<-DESC
 #TODO: Use to catch volume change in the both of foreground and background.

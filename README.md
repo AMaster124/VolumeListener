@@ -20,18 +20,6 @@ it, simply add the following line to your Podfile:
 pod 'VolumeListener', :git => 'https://github.com/AMaster124/VolumeListener.git'
 ```
 
-## Permission
-Add to your Info.plist apropriate *UsageDescription keys with a string value explaining to the user how the app uses location data. Please see official documentation
-
-```xml
-<key>NSLocationWhenInUseUsageDescription</key>
-<string>Some description</string>
-<key>NSLocationAlwaysUsageDescription</key>
-<string>Some description</string>
-<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-<string>Some description</string>
-```
-
 ## Capability
 To get to the background modes capability list you:
 
@@ -39,7 +27,7 @@ To get to the background modes capability list you:
 2. Click the app target.
 3. Select the Capabilities tab.
 4. Turn the Background Modes switch on.
-5. Check the options: Location updates, Background fetch, Background processing 
+5. Check the options: Audio, AirPlay, and Picture in Picture
 
 
 ## Usage
