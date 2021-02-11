@@ -59,8 +59,8 @@ public class VolumeListener: NSObject, CLLocationManagerDelegate {
     }
     
     private func playMusic(){
-        let path = Bundle.main.path(forResource: "nonesound.mp3", ofType: nil)
-        let url = URL(fileURLWithPath: path!)
+        guard let path = Bundle.main.path(forResource: "nonesound.mp3", ofType: nil) else { return }
+        let url = URL(fileURLWithPath: path)
         do{
             if(self.audioPlayer != nil && self.audioPlayer!.isPlaying){
                 self.audioPlayer?.stop()
@@ -70,11 +70,7 @@ public class VolumeListener: NSObject, CLLocationManagerDelegate {
                 self.audioPlayer = try AVAudioPlayer(contentsOf: url)
                 self.audioPlayer?.numberOfLoops = 1
 
-//                try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, mode: AVAudioSession.Mode.default, options: [.mixWithOthers, .allowAirPlay])
-//                NSLog("Playback OK")
-//                try AVAudioSession.sharedInstance().setActive(true)
-//                NSLog("Session is Active")
-                try AVAudioSession.sharedInstance().setActive(true)
+                try audioSession.setActive(true)
                 print("Session is Active")
             } catch {
                 print(error)

@@ -1,8 +1,7 @@
 {
   "name": "VolumeListener",
-  "version": "0.1.0",
-  "summary": "A short description of VolumeListener.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "0.1.3",
+  "summary": "Volume change listener.",
   "homepage": "https://github.com/AMaster124/VolumeListener",
   "license": {
     "type": "MIT",
@@ -13,10 +12,17 @@
   },
   "source": {
     "git": "https://github.com/AMaster124/VolumeListener.git",
-    "tag": "0.1.0"
+    "tag": "0.1.3"
   },
+  "swift_versions": "5.0",
   "platforms": {
-    "ios": "9.0"
+    "ios": "10.0"
   },
-  "source_files": "VolumeListener/Classes/**/*"
+  "source_files": "VolumeListener/Classes/**/*",
+  "resource_bundles": {
+    "VolumeListener": [
+      "VolumeListener/Assets/*.mp3"
+    ]
+  },
+  "swift_version": "5.0"
 }

@@ -25,9 +25,7 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-   s.resource_bundles = {
-     'VolumeListener' => ['VolumeListener/Assets/*.mp3']
-   }
+   s.resources = 'VolumeListener/Assets/*.mp3'
 #
 #   s.public_header_files = 'Pod/Classes/**/*.h'
 #   s.frameworks = 'UIKit', 'AVFoundation', 'CoreLocation'
