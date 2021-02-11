@@ -10,6 +10,7 @@
 		0BB488525582815AAF8949C23919794F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		11D89A120B629A60E66AC9FB63E85E3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		1874EFE625D4410100B15111 /* nonesound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1874EFE525D4410100B15111 /* nonesound.mp3 */; };
+		18BF797A25D54681006773C1 /* nonesound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1874EFE525D4410100B15111 /* nonesound.mp3 */; };
 		213B87D4A198CBC3FE5E67AFDEB65DE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		2744CE742A8791FC55EF674FB3C23328 /* VLReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA3434EBF0266A1793BB1B50E6D964F /* VLReachability.swift */; };
 		2CDA241F936D3CED15421452606436A4 /* Pods-VolumeListener_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C26CDD612259F24E58F2163A5F1CC7F5 /* Pods-VolumeListener_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -411,6 +412,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18BF797A25D54681006773C1 /* nonesound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
