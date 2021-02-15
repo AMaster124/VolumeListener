@@ -21,10 +21,9 @@ class ViewController: UIViewController {
     @IBAction func onBtnHelp(_ sender: Any) {
         if VolumeListener.sharedInstance().isWait {
             sendRequest()
-            VolumeListener.sharedInstance().setWait(wait: false)
+            VolumeListener.sharedInstance().stopListener()
         } else {
-            VolumeListener.sharedInstance().setWait(wait: true)
-            
+            VolumeListener.sharedInstance().startListener(triggerCnt: 3, delegate: self)
             btnHelp.setTitle("구조요청", for: .normal)
             btnHelp.backgroundColor = .blue
             self.view.layoutIfNeeded()

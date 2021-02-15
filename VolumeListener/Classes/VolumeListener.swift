@@ -1,6 +1,7 @@
 import UIKit
 import AVFoundation
 import CoreLocation
+import MediaPlayer
 
 public protocol VolumeListenerDelegate {
     func didChangedVolume(volumeListner: VolumeListener)
@@ -24,17 +25,27 @@ public class VolumeListener: NSObject, CLLocationManagerDelegate {
     
     private var audioPlayer: AVAudioPlayer? = nil
     
+    private var oldVolume: Float = 0
+    
     let reachability = try! VLReachability()
 
     public static func sharedInstance() -> VolumeListener {
         return shared
     }
     
-    public func setWait(wait: Bool) {
+    private func setWait(wait: Bool) {
         self.isWait = wait
     }
     
+    public func stopListener() {
+        setWait(wait: false)
+        audioPlayer?.stop()
+        NotificationCenter.default.removeObserver(self, name: Notification.Name("AVSystemController_SystemVolumeDidChangeNotification"), object: nil)
+        NotificationCenter.default.removeObserver(self, name: Notification.Name("didEnterBackground"), object: nil)
+    }
+    
     public func startListener(triggerCnt: Int = 3, delegate: VolumeListenerDelegate? = nil) {
+        setWait(wait: true)
         self.delegate = delegate
         self.triggerCnt = triggerCnt
         print( "startListener")
@@ -44,6 +55,21 @@ public class VolumeListener: NSObject, CLLocationManagerDelegate {
         
         UIApplication.shared.beginReceivingRemoteControlEvents()
         NotificationCenter.default.addObserver(self, selector: #selector(self.volumeDidChange(notification:)), name: NSNotification.Name(rawValue: "AVSystemController_SystemVolumeDidChangeNotification"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(didEnterBackground), name: NSNotification.Name(rawValue: "didEnterBackground"), object: nil)
+//        NotificationCenter.default.addObserver(self,
+//                           selector: #selector(handleInterruption),
+//                           name: AVAudioSession.interruptionNotification,
+//                           object: nil)
+    }
+    
+    @objc func handleInterruption(notification: Notification) {
+        print("audio interrupted")
+    }
+    
+    @objc func didEnterBackground() {
+        if self.isWait {
+            MPVolumeView.setVolume(0.5)
+        }
     }
     
     private func playMusic(){
@@ -51,25 +77,30 @@ public class VolumeListener: NSObject, CLLocationManagerDelegate {
         if(self.audioPlayer != nil && self.audioPlayer!.isPlaying){
             self.audioPlayer?.stop()
         }
-        
+
         do {
             self.audioPlayer = try AVAudioPlayer(contentsOf: url)
             self.audioPlayer?.numberOfLoops = -1
-
-            try audioSession.setCategory(.playback, mode: .default, options: [.mixWithOthers, .allowAirPlay])
+            
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
             try audioSession.setActive(true)
             print("Session is Active")
+            
         } catch {
             print(error)
         }
 
         self.audioPlayer?.play()
+
+//        audioSession.addObserver(self, forKeyPath: "outputVolume", options: .old, context: nil)
     }
     
-    func stopListenr() {
-        isWait = true
-    }
-    
+//    public override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+//      if keyPath == "outputVolume" {
+//        print("got in here")
+//      }
+//    }
+//
     private func initState() {
         checkSpaceTimer?.invalidate()
         checkSpaceTimer = nil
@@ -108,8 +139,16 @@ public class VolumeListener: NSObject, CLLocationManagerDelegate {
             initState()
             return
         }
+        
         let volume = notification.userInfo!["AVSystemController_AudioVolumeNotificationParameter"] as! Float
+
         print("Device Volume:\(volume)")
+
+        if(volume != 0 && volume != 1 && volume == oldVolume) {
+            return
+        }
+        
+        oldVolume = volume
         
         clickedCnt += 1
         if checkSpaceTimer == nil {
@@ -118,7 +157,7 @@ public class VolumeListener: NSObject, CLLocationManagerDelegate {
         }
         
         if clickedCnt >= self.triggerCnt {
-            isWait = false
+            stopListener()
             delegate?.didChangedVolume(volumeListner: self)
         }
     }
@@ -135,3 +174,13 @@ public class VolumeListener: NSObject, CLLocationManagerDelegate {
     }
 }
 
+extension MPVolumeView {
+    static func setVolume(_ volume: Float) {
+        let volumeView = MPVolumeView()
+        let slider = volumeView.subviews.first(where: { $0 is UISlider }) as? UISlider
+
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
+            slider?.setValue(volume, animated: false)
+        }
+    }
+}
