@@ -482,7 +482,7 @@
 			baseConfigurationReference = 9FFC578D76815385BC4E222E /* Pods-VolumeListener_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = 44YK55T298;
 				INFOPLIST_FILE = VolumeListener/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -500,7 +500,7 @@
 			baseConfigurationReference = B97D3B7C6EA19B39A16DF5DF /* Pods-VolumeListener_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = 44YK55T298;
 				INFOPLIST_FILE = VolumeListener/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;

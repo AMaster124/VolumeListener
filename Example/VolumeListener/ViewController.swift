@@ -63,6 +63,5 @@ class ViewController: UIViewController {
 extension ViewController: VolumeListenerDelegate {
     func didChangedVolume(volumeListner: VolumeListener) {
         sendRequest()
-        print("tapped volume button!!!")
     }
 }

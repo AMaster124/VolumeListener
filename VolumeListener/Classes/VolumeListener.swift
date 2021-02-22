@@ -20,7 +20,8 @@ public class VolumeListener: NSObject, CLLocationManagerDelegate {
     
     private var triggerCnt = 3
     private var clickedCnt = 0
-    private var spaceTime = 0.1
+    private var spaceTime: Double = 0
+    private var prevSpaceTime = -0.1
     private var checkSpaceTimer: Timer? = nil
     
     private var audioPlayer: AVAudioPlayer? = nil
@@ -68,7 +69,10 @@ public class VolumeListener: NSObject, CLLocationManagerDelegate {
     
     @objc func didEnterBackground() {
         if self.isWait {
-            MPVolumeView.setVolume(0.5)
+//            MPVolumeView.setVolume(0.5)
+            if self.audioPlayer?.isPlaying != true {
+                playMusic()
+            }
         }
     }
     
@@ -82,7 +86,7 @@ public class VolumeListener: NSObject, CLLocationManagerDelegate {
             self.audioPlayer = try AVAudioPlayer(contentsOf: url)
             self.audioPlayer?.numberOfLoops = -1
             
-            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: [.mixWithOthers])
             try audioSession.setActive(true)
             print("Session is Active")
             
@@ -91,6 +95,7 @@ public class VolumeListener: NSObject, CLLocationManagerDelegate {
         }
 
         self.audioPlayer?.play()
+        self.audioPlayer?.delegate = self
 
 //        audioSession.addObserver(self, forKeyPath: "outputVolume", options: .old, context: nil)
     }
@@ -100,11 +105,12 @@ public class VolumeListener: NSObject, CLLocationManagerDelegate {
 //        print("got in here")
 //      }
 //    }
-//
+
     private func initState() {
         checkSpaceTimer?.invalidate()
         checkSpaceTimer = nil
         spaceTime = 0
+        prevSpaceTime = -0.1
         clickedCnt = 0
     }
     
@@ -135,25 +141,31 @@ public class VolumeListener: NSObject, CLLocationManagerDelegate {
     }
     
     @objc private func volumeDidChange(notification: NSNotification) {
-        if isWait == false {
+        if isWait == false || spaceTime-prevSpaceTime < 0.1 {
             initState()
             return
         }
+        prevSpaceTime = spaceTime
         
+        if spaceTime == 0 {
+            clickedCnt = 0
+        }
+
         let volume = notification.userInfo!["AVSystemController_AudioVolumeNotificationParameter"] as! Float
 
-        print("Device Volume:\(volume)")
+        print("Device Volume:\(volume)", spaceTime, prevSpaceTime)
 
-        if(volume != 0 && volume != 1 && volume == oldVolume) {
-            return
-        }
+//        if(volume != 0 && volume != 1 && volume == oldVolume) {
+//            return
+//        }
         
         oldVolume = volume
         
         clickedCnt += 1
         if checkSpaceTimer == nil {
-            checkSpaceTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(self.checkSpaceTime), userInfo: nil, repeats: true)
+            checkSpaceTimer = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(self.checkSpaceTime), userInfo: nil, repeats: true)
             spaceTime = 0
+            prevSpaceTime = -0.1
         }
         
         if clickedCnt >= self.triggerCnt {
@@ -163,7 +175,7 @@ public class VolumeListener: NSObject, CLLocationManagerDelegate {
     }
 
     @objc private func checkSpaceTime() {
-        spaceTime += 0.1
+        spaceTime += 0.05
         if spaceTime > 0.5 {
             initState()
         }
@@ -182,5 +194,23 @@ extension MPVolumeView {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
             slider?.setValue(volume, animated: false)
         }
+    }
+}
+
+extension VolumeListener: AVAudioPlayerDelegate {
+    public func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        print("audioPlayerDidFinishPlaying")
+    }
+    
+    public func audioPlayerDecodeErrorDidOccur(_ player: AVAudioPlayer, error: Error?) {
+        print("audioPlayerDecodeErrorDidOccur")
+    }
+    
+    public func audioPlayerBeginInterruption(_ player: AVAudioPlayer) {
+        print("audioPlayerBeginInterruption")
+    }
+    
+    public func audioPlayerEndInterruption(_ player: AVAudioPlayer, withOptions flags: Int) {
+        print("audioPlayerEndInterruption")
     }
 }
