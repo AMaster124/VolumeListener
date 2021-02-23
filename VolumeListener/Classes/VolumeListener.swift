@@ -57,14 +57,19 @@ public class VolumeListener: NSObject, CLLocationManagerDelegate {
         UIApplication.shared.beginReceivingRemoteControlEvents()
         NotificationCenter.default.addObserver(self, selector: #selector(self.volumeDidChange(notification:)), name: NSNotification.Name(rawValue: "AVSystemController_SystemVolumeDidChangeNotification"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(didEnterBackground), name: NSNotification.Name(rawValue: "didEnterBackground"), object: nil)
-//        NotificationCenter.default.addObserver(self,
-//                           selector: #selector(handleInterruption),
-//                           name: AVAudioSession.interruptionNotification,
-//                           object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(onAudioSessionEvent), name: AVAudioSession.interruptionNotification, object: nil)
     }
     
-    @objc func handleInterruption(notification: Notification) {
-        print("audio interrupted")
+    @objc func onAudioSessionEvent(notification: Notification) {
+        if notification.name == AVAudioSession.interruptionNotification {
+            if notification.userInfo?[AVAudioSessionInterruptionTypeKey] as! UInt == AVAudioSession.InterruptionType.began.rawValue {
+//                print("Interruption began!")
+            } else {
+//                print("Interruption ended!")
+                playMusic()
+            }
+        }
+
     }
     
     @objc func didEnterBackground() {
