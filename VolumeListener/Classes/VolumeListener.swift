@@ -158,7 +158,7 @@ public class VolumeListener: NSObject, CLLocationManagerDelegate {
 
         let volume = notification.userInfo!["AVSystemController_AudioVolumeNotificationParameter"] as! Float
 
-        print("Device Volume:\(volume)", spaceTime, prevSpaceTime)
+//        print("Device Volume:\(volume)", spaceTime, prevSpaceTime)
 
 //        if(volume != 0 && volume != 1 && volume == oldVolume) {
 //            return
@@ -173,15 +173,16 @@ public class VolumeListener: NSObject, CLLocationManagerDelegate {
             prevSpaceTime = -0.1
         }
         
-        if clickedCnt >= self.triggerCnt {
+        if clickedCnt >= 10 {
             stopListener()
             delegate?.didChangedVolume(volumeListner: self)
         }
     }
 
     @objc private func checkSpaceTime() {
+        print("checkSpaceTime", spaceTime, prevSpaceTime)
         spaceTime += 0.05
-        if spaceTime > 5 {
+        if spaceTime - prevSpaceTime > 0.5 {
             initState()
         }
     }
