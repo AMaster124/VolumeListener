@@ -173,7 +173,7 @@ public class VolumeListener: NSObject, CLLocationManagerDelegate {
             prevSpaceTime = -0.1
         }
         
-        if clickedCnt >= 10 {
+        if clickedCnt >= self.triggerCnt {
             stopListener()
             delegate?.didChangedVolume(volumeListner: self)
         }
