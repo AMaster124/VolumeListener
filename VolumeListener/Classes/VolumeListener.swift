@@ -181,7 +181,7 @@ public class VolumeListener: NSObject, CLLocationManagerDelegate {
 
     @objc private func checkSpaceTime() {
         spaceTime += 0.05
-        if spaceTime > 0.5 {
+        if spaceTime > 5 {
             initState()
         }
     }
