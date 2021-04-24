@@ -46,6 +46,7 @@ public class VolumeListener: NSObject, CLLocationManagerDelegate {
     }
     
     public func startListener(triggerCnt: Int = 3, delegate: VolumeListenerDelegate? = nil) {
+        initState()
         setWait(wait: true)
         self.delegate = delegate
         self.triggerCnt = triggerCnt
@@ -147,7 +148,7 @@ public class VolumeListener: NSObject, CLLocationManagerDelegate {
     
     @objc private func volumeDidChange(notification: NSNotification) {
         if isWait == false || spaceTime-prevSpaceTime < 0.1 {
-            initState()
+//            initState()
             return
         }
         prevSpaceTime = spaceTime
@@ -180,7 +181,7 @@ public class VolumeListener: NSObject, CLLocationManagerDelegate {
     }
 
     @objc private func checkSpaceTime() {
-        print("checkSpaceTime", spaceTime, prevSpaceTime)
+        print("checkSpaceTime", spaceTime, prevSpaceTime, isWait)
         spaceTime += 0.05
         if spaceTime - prevSpaceTime > 0.5 {
             initState()

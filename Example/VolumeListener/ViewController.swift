@@ -27,6 +27,7 @@ class ViewController: UIViewController {
             btnHelp.setTitle("구조요청", for: .normal)
             btnHelp.backgroundColor = .blue
             self.view.layoutIfNeeded()
+//            VolumeListener.sharedInstance().startListener(triggerCnt: 5, delegate: self)
         }
     }
 
@@ -56,6 +57,7 @@ class ViewController: UIViewController {
         
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
         center.add(request)
+        
     }
 
 }
